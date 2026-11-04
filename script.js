@@ -9,11 +9,10 @@ let restartButton = document.getElementById("restartButton");
 let motionButton = document.getElementById("motionButton");
 let sceneButtons = document.getElementsByClassName("scene-button");
 
-
 let imageFiles = [
-  "images/morning.jpg",
-  "images/streets.jpg",
-  "images/evening.jpg"
+  "morning.jpg",
+  "streets.jpg",
+  "evening.jpg"
 ];
 
 let imageDescriptions = [
