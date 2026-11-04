@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Walk Through Lahore</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <link rel="preload" as="image" href="images/streets.jpg">
+  <link rel="preload" as="image" href="images/evening.jpg">
+</head>
+<body class="morning">
+  <header>
+    <p>CCT360 — Design with Sound &amp; Vision</p>
+    <h1>A Walk Through Lahore</h1>
+    <p>
+      Experience the city through morning birds,
+      busy streets, and a peaceful evening.
+    </p>
+  </header>
+  <main>
+    <section class="experience" aria-label="Lahore soundscape">
+      <div class="image-container">
+        <img
+          id="sceneImage"
+          src="images/morning.jpg"
+          alt="Morning in a Lahore garden"
+        >
+      </div>
+      <div class="scene-text" aria-live="polite">
+        <p id="sceneLabel">SCENE 1 — MORNING</p>
+        <h2 id="sceneTitle">Before the Rush</h2>
+        <p id="sceneDescription">
+          Birds sing and a gentle breeze moves through the trees
+          as the city begins to wake.
+        </p>
+      </div>
+      <div class="audio-section">
+        <h3>Listen to the Soundscape</h3>
+        <audio id="soundscape" controls preload="metadata">
+          <source
+            src="audio/lahore-soundscape.mp3"
+            type="audio/mpeg"
+          >
+          Your browser does not support audio playback.
+          <a href="audio/lahore-soundscape.mp3">
+            Download the soundscape.
+          </a>
+        </audio>
+        <p id="playbackStatus" role="status">
+          Press play to begin.
+        </p>
+        <p class="hint">
+          The photo changes automatically at 25 and 50 seconds.
+          Choose a scene below to jump to that part of the journey.
+        </p>
+      </div>
+      <div class="scene-buttons" aria-label="Choose a scene">
+        <button
+          id="morningButton"
+          class="scene-button active"
+          type="button"
+          aria-pressed="true"
+        >
+          Morning
+          <span>0:00 — Birds &amp; Breeze</span>
+        </button>
+
+        <button
+          id="streetsButton"
+          class="scene-button"
+          type="button"
+          aria-pressed="false"
+        >
+          Busy Streets
+          <span>0:25 — City Traffic</span>
+        </button>
+
+        <button
+          id="eveningButton"
+          class="scene-button"
+          type="button"
+          aria-pressed="false"
+        >
+          Evening
+          <span>0:50 — Crickets &amp; Frogs</span>
+        </button>
+      </div>
+      <div class="extra-controls">
+        <button id="restartButton" type="button">
+          Restart
+        </button>
+
+        <button
+          id="motionButton"
+          type="button"
+          aria-pressed="false"
+        >
+          Turn Motion Off
+        </button>
+      </div>
+      <noscript>
+        <p>
+          Enable JavaScript to switch between scenes.
+          The audio player still works without JavaScript.
+        </p>
+      </noscript>
+    </section>
+    <section class="about">
+      <h2>About This Journey</h2>
+      <p>
+        This 75-second soundscape imagines a day in Lahore.
+        It begins with a quiet morning, moves into the energy
+        of busy streets, and ends in a greener, quieter space
+        filled with evening sounds.
+      </p>
+      <p>
+        The sounds represent the atmosphere of Lahore.
+        They are existing ambience recordings, rather than
+        recordings verified as having been made in the city.
+      </p>
+    </section>
+    <details class="credits">
+      <summary>Media Credits</summary>
+      <h3>Audio</h3>
+      <ul>
+        <li>
+          Morning Breeze and Birds — freesound_community
+        </li>
+        <li>
+          Traffic in City — storegraphic
+        </li>
+        <li>
+          Evening Frogs and Crickets Chirping — tropicalcall
+        </li>
+      </ul>
+    </details>
+  </main>
+  <footer>
+    <p>A Walk Through Lahore — CCT360</p>
+  </footer>
+</body>
+</html>
